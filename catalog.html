@@ -2,12 +2,13 @@
 <html lang="ru">
 
   <head>
+    <link rel="stylesheet" href="styles/styles.css">
     <meta charset="utf-8">
     <title>Каталог</title>
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a href="index.html" class="navigation-logo">
           <img src="images/headerICON/logo.svg" alt="Логотип Седона" class="page-header-logo" width="140" height="70">
@@ -28,7 +29,9 @@
             <a href="#" class="navigation-link"><span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link"><span class="visually-hidden">Избранное</span> 12</a>
+            <a href="#" class="navigation-link"><span class="visually-hidden">Избранное</span>
+              <div>12</div>
+            </a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">Хочу сюда!</a>
@@ -37,8 +40,8 @@
       </nav>
     </header>
 
-    <main class="main-catalog">
-      <section class="catalog-hotel">
+    <main class="main-catalog" data-test="main">
+      <section class="catalog-hotel" data-test="filter">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -115,7 +118,7 @@
         <a href="#" class="button button-list"><span class="visually-hidden">Показать список</span></a>
       </section>
 
-      <section class="hotels">
+      <section class="hotels" data-test="catalog">
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
@@ -196,7 +199,7 @@
         </ul>
       </section>
 
-      <section class=" subscribe">
+      <section class=" subscribe" data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" class="subscribe-form" method="post">
@@ -206,7 +209,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="footer-social-list">
         <li class="fotter-social-item">
           <a class="button" href="https://vk.com/htmlacademy"><span class="visually-hidden">ВКонтакте</span></a>
