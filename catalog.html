@@ -34,11 +34,11 @@
             <li class="navigation-item">
               <a href="#" class="navigation-link"><span class="visually-hidden">Избранное</span>
                 <img src="images/headericon/heart.svg" class="favorite-icon" alt="избранное">
-                <div>12</div>
+                <div class="navigation-link-fav">12</div>
               </a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link-link">хочу сюда!</a>
+              <a href="#" class="navigation-link-button">хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -113,21 +113,23 @@
         </section>
 
         <section class="sorting">
-          <h2>Найдено гостиниц: 38</h2>
+          <h2 class="sorting-title">Найдено гостиниц: 38</h2>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвое</option>
             <option value="expensive">Сначала дорогое</option>
             <option value="popular">Сначала популярное</option>
           </select>
-          <a href="#" class="button button-card"><span class="visually-hidden">Показать карточки</span>
-            <img src="images/catalog/view1.svg" alt="Показать карточки" class="view-card">
-          </a>
-          <a href="#" class="button button-deployed"><span class="visually-hidden">Показать развернуто</span>
-            <img src="images/catalog/view2.svg" alt="Показать развернуто" class="view-deployed">
-          </a>
-          <a href="#" class="button button-list"><span class="visually-hidden">Показать список</span>
-            <img src="images/catalog/view3.svg" alt="Показать список" class="bview-list">
-          </a>
+          <div class="sorting-view">
+            <a href="#" class="button button-card"><span class="visually-hidden">Показать карточки</span>
+              <img src="images/catalog/view1.svg" alt="Показать карточки" class="view-card">
+            </a>
+            <a href="#" class="button button-deployed"><span class="visually-hidden">Показать развернуто</span>
+              <img src="images/catalog/view2.svg" alt="Показать развернуто" class="view-deployed">
+            </a>
+            <a href="#" class="button button-list"><span class="visually-hidden">Показать список</span>
+              <img src="images/catalog/view3.svg" alt="Показать список" class="bview-list">
+            </a>
+          </div>
         </section>
 
         <section class="hotels">
@@ -136,53 +138,61 @@
               <a class="hotel-card-link" href="hotel.html">
                 <img class="hotel-card-image" src="images/catalog/hotel-amara.jpg" alt="отель Amara Resort & Spa"
                   width="300" height="212">
-                <h3 class="hotel-card-title">Amara Resort & Spa</h3>
               </a>
-              <p class="hotel-card-type">Гостиница</p>
-              <p class="hotel-card-price">От 4000 &#8381</p>
-              <a class="hotel-card-more button" href="more.html">подробнее</a>
-              <button class="hotel-card-tofavorit button">в избранное</button>
-              <p><span class="star visually-hidden">4 звезды</span></p>
-              <p class="raiting">рейтинг: 8,5</p>
+              <div class="hotel-card-text">
+                <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+                <p class="hotel-card-type">Гостиница</p>
+                <p class="hotel-card-price">От 4000 &#8381</p>
+                <a class="hotel-card-more button" href="more.html">подробнее</a>
+                <button class="hotel-card-tofavorit button">в избранное</button>
+                <p><span class="star visually-hidden">4 звезды</span></p>
+                <p class="hotel-card-raiting">рейтинг: 8,5</p>
+              </div>
             </li>
             <li class="hotel-card">
               <a class="hotel-card-link" href="hotel.html">
                 <img class="hotel-card-image" src="images/catalog/hotel-villas.jpg" alt="отель Villas at Poco Diablo"
                   width="300" height="212">
-                <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
               </a>
-              <p class="hotel-card-type">Гостиница</p>
-              <p class="hotel-card-price">От 5000 &#8381</p>
-              <a class="hotel-card-more button" href="more.html">подробнее</a>
-              <button class="hotel-card-infavorit button">в избранном</button>
-              <p><span class="star visually-hidden">4 звезды</span></p>
-              <p class="raiting">рейтинг: 9,2</p>
+              <div class="hotel-card-text">
+                <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+                <p class="hotel-card-type">Гостиница</p>
+                <p class="hotel-card-price">От 5000 &#8381</p>
+                <a class="hotel-card-more button" href="more.html">подробнее</a>
+                <button class="hotel-card-infavorit button">в избранном</button>
+                <p><span class="star visually-hidden">4 звезды</span></p>
+                <p class="hotel-card-raiting">рейтинг: 9,2</p>
+              </div>
             </li>
             <li class="hotel-card">
               <a class="hotel-card-link" href="hotel.html">
                 <img class="hotel-card-image" src="images/catalog/hotel-desert.jpg" alt="отель Desert Quail Inn"
                   width="300" height="212">
-                <h3 class="hotel-card-title">Desert Quail Inn</h3>
               </a>
-              <p class="hotel-card-type">Гостиница</p>
-              <p class="hotel-card-price">От 2500 &#8381</p>
-              <a class="hotel-card-more button" href="more.html">подробнее</a>
-              <button class="hotel-card-tofavorit button">в избранное</button>
-              <p><span class="star visually-hidden">3 звезды</span></p>
-              <p class="raiting">рейтинг: 6,9</p>
+              <div class="hotel-card-text">
+                <h3 class="hotel-card-title">Desert Quail Inn</h3>
+                <p class="hotel-card-type">Гостиница</p>
+                <p class="hotel-card-price">От 2500 &#8381</p>
+                <a class="hotel-card-more button" href="more.html">подробнее</a>
+                <button class="hotel-card-tofavorit button">в избранное</button>
+                <p><span class="star visually-hidden">3 звезды</span></p>
+                <p class="hotel-card-raiting">рейтинг: 6,9</p>
+              </div>
             </li>
             <li class="hotel-card">
               <a class="hotel-card-link" href="hotel.html">
                 <img class="hotel-card-image" src="images/catalog/hotel-greentree.jpg" alt="отель GreenTree Inn"
                   width="300" height="212">
-                <h3 class="hotel-card-title">GreenTree Inn</h3>
               </a>
-              <p class="hotel-card-type">Гостиница</p>
-              <p class="hotel-card-price">От 1500 &#8381</p>
-              <a class="hotel-card-more button" href="more.html">подробнее</a>
-              <button class="hotel-card-tofavorit button">в избранное</button>
-              <p><span class="star visually-hidden">2 звезды</span></p>
-              <p class="raiting">рейтинг: 5,0</p>
+              <div class="hotel-card-text">
+                <h3 class="hotel-card-title">GreenTree Inn</h3>
+                <p class="hotel-card-type">Гостиница</p>
+                <p class="hotel-card-price">От 1500 &#8381</p>
+                <a class="hotel-card-more button" href="more.html">подробнее</a>
+                <button class="hotel-card-tofavorit button">в избранное</button>
+                <p><span class="star visually-hidden">2 звезды</span></p>
+                <p class="hotel-card-raiting">рейтинг: 5,0</p>
+              </div>
             </li>
           </ul>
         </section>
@@ -212,8 +222,8 @@
         </section>
 
         <section class="subscribe-catalog">
-          <h2>Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+          <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form action="https://echo.htmlacademy.ru/" class="subscribe-form" method="post">
             <input type="email" class="field" placeholder="Ваш e-mail" name="subscribe-email" required>
             <button class="subscribe-button" type="submit">Подписаться</button>
