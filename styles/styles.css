@@ -42,12 +42,13 @@ body{
   overflow: hidden;
 }
 
-input[type="number"] {
-	-moz-appearance: textfield;
+.number{
+  -moz-appearance: textfield;
 }
-input[type="number"]:hover,
-input[type="number"]:focus {
-	-moz-appearance: number-input;
+
+.number:hover,
+.number:focus{
+  -moz-appearance: number-input;
 }
 
 img {
@@ -181,7 +182,7 @@ img {
 /* index */
 .hero{
   position: relative;
-  background-color: #000000;
+  background-color: #534343;
   background: url("../images/index-background.jpg") no-repeat;
   background-position: center;
   text-align: center;
@@ -228,6 +229,8 @@ img {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .advantages-list{
@@ -241,6 +244,7 @@ img {
 
 .advantages-item{
   display: flex;
+  background: #82B3D3;
 }
 
 .advantages-text{
@@ -252,12 +256,27 @@ img {
 }
 
 .adventages-title{
+  position: relative;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   width: 43%;
   margin: 0 auto;
+}
+
+.adventages-title::after{
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  bottom: -31px;
+  left: 55px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.title-after::after{
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .adventages-description{
@@ -272,24 +291,12 @@ img {
 }
 
 .blue{
-  position: relative;
   background: #82B3D3;
   color: #ffffff;
   padding-top: 92px;
 }
 
-.blue::before{
-  content: '';
-  position: absolute;
-  width: 60px;
-  height: 2px;
-  top: 178px;
-  left: 170px;
-  background: rgba(255, 255, 255, 0.3);
-}
-
 .whiteblue{
-  position: relative;
   background: rgba(131, 179, 211, 0.12);
   width: 400px;
   padding-top: 103px;
@@ -297,7 +304,7 @@ img {
   margin: 0;
 }
 
-.whiteblue::before{
+/* .whiteblue::before{
   content: '';
   position: absolute;
   width: 60px;
@@ -305,24 +312,13 @@ img {
   top: 189px;
   left: 170px;
   background: rgba(0, 0, 0, 0.3);
-}
+} */
 
 .lightblue{
-  position: relative;
   padding-top: 103px;
   padding-bottom: 10px;
   background: rgba(131, 179, 211, 0.2);
   width: 400px;
-}
-
-.lightblue::before{
-  content: '';
-  position: absolute;
-  width: 60px;
-  height: 2px;
-  top: 189px;
-  left: 170px;
-  background: rgba(0, 0, 0, 0.3);
 }
 
 /* рекомендации */
@@ -347,6 +343,8 @@ img {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .recommendation-text{
@@ -354,6 +352,8 @@ img {
   line-height: 21px;
   padding-bottom: 60px;
   margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .recommendation-house{
@@ -418,9 +418,9 @@ img {
 /* подписаться */
 .subscribe{
   color: #ffffff;
-  background-color: #000000;
+  background-color: #4e4545;
   text-align: center;
-  background: url("../images/subscribe.jpg") no-repeat;
+  background: url("../images/sub.jpg") no-repeat;
   background-size: cover;
   padding-top: 70px;
   padding-bottom: 104px;
@@ -514,7 +514,7 @@ img {
   color: rgba(104, 162, 202, 0.3);
 }
 
-.footer-contacts-address-phone{
+.contacts-phone{
   text-decoration: none;
   color: #000000;
   font-size: 40px;
@@ -523,12 +523,12 @@ img {
   font-style: normal;
 }
 
-.footer-contacts-address-phone:hover,
-.footer-contacts-address-phone:focus-visible{
+.contacts-phone:hover,
+.contacts-phone:focus-visible{
   color: #756157;
 }
 
-.footer-contacts-address-phone:active{
+.contacts-phone:active{
   color: rgba(117, 97, 87, 0.3);
 }
 
@@ -909,7 +909,7 @@ img {
   margin: 0 auto;
   background-size: cover;
   margin-top: -13px;
-  background-color: #000000;
+  background-color: #5c5151;
 }
 
 .inner-header-title{
@@ -954,6 +954,9 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.catalog-filter-list{
+max-width: 200px;
+}
 
 .catalog-filter{
   display: flex;
@@ -1002,6 +1005,7 @@ img {
   background: #ffffff;
   border-radius: 4px;
 }
+
 .control:hover .control-mark,
 .control:hover .control-label{
   opacity: 0.6;
@@ -1046,6 +1050,7 @@ img {
 .control-lable{
   font-size: 18px;
   line-height: 23px;
+  padding-left: 20px;
 }
 
 .catalog-filter-item:not(:last-child) {
@@ -1053,7 +1058,7 @@ img {
 }
 
 .range-wrapper{
-  padding-left: 122px;
+  padding-left: 123px;
   margin-top: -1px;
 }
 
@@ -1119,7 +1124,7 @@ img {
 
 .range-price{
   display: block;
-  width: 143px;
+  width: 120px;
   padding: 11px 8px 9px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -1127,7 +1132,6 @@ img {
   line-height: 24px;
   text-indent: 10px;
   background: #f2f2f2;
-  box-sizing: border-box;
   cursor: pointer;
   border: 3px solid transparent;
   outline: none;
@@ -1147,6 +1151,7 @@ img {
 }
 
 .range-price:active{
+  padding: 12px 9px 10px;
   border: 2px solid #000000;
 }
 
@@ -1191,7 +1196,7 @@ img {
 .button-reset{
   margin: 0;
   padding: 0;
-  margin-right: -3px;
+  margin-right: -2px;
 }
 
 .button-apply{
@@ -1203,6 +1208,7 @@ img {
   text-transform: uppercase;
   background: #82B3D3;
   border-radius: 4px;
+  margin-left: 2px;
 }
 
 .button-apply:hover,
@@ -1331,7 +1337,7 @@ img {
   padding: 0;
   margin-left: 68px;
   margin-bottom: 80px;
-  margin-top: 21px;
+  margin-top: 20px;
 }
 
 .hotel-card{
@@ -1401,7 +1407,7 @@ img {
   text-decoration: none;
   background: #756157;
   border-radius: 4px;
-  padding: 8px 26px;
+  padding: 8px 27px;
 }
 
 .hotel-card-more:hover,
